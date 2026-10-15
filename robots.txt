@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Reemplaza esto con tu URL real de Render
+Sitemap: https://web-moi-estudio.onrender.com/sitemap.xml
