@@ -1,0 +1,527 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sobre-mi.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/proyectos.css') }}">
+
+{% endblock %}
+
+{% block hero %}
+
+        <section class="hero" id="inicio">
+
+                    <div class="hero-container">
+
+            <!-- Contenido de presentación -->
+            <div class="hero-content">
+
+                <span class="hero-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    DESARROLLADOR WEB
+                </span>
+
+                <h1 class="hero-title">
+                    Transformo ideas en
+                    <span class="hero-title-highlight">
+                        experiencias digitales.
+                    </span>
+                </h1>
+
+                <p class="hero-description">
+                    Diseño y desarrollo sitios web modernos,
+                    funcionales y adaptados a cada dispositivo.
+                    Convierto tus ideas en experiencias digitales.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#proyectos" class="hero-btn hero-btn-primary">
+                        Ver mis proyectos
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#sobre-mi" class="hero-btn hero-btn-secondary">
+                        Conóceme
+                    </a>
+
+                </div>
+
+                <div class="hero-availability">
+                    <span class="availability-dot"></span>
+                    <span>Disponible para proyectos</span>
+                </div>
+
+            </div>
+
+            <!-- Ilustración de la laptop -->
+            <div class="hero-visual">
+
+                <div class="hero-glow"></div>
+
+                <div class="hero-orbit hero-orbit-one"></div>
+                <div class="hero-orbit hero-orbit-two"></div>
+
+                <div class="hero-tech-badge hero-tech-code">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="hero-tech-badge hero-tech-python">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+
+                <img
+                    src="{{ url_for('static', filename='img/imgen-hero.webp') }}"
+                    alt="Laptop con una interfaz web y elementos de programación"
+                    class="hero-laptop"
+                    fetchpriority="high"
+                >
+
+            </div>
+
+        </div>
+
+        </section>
+
+{% endblock %}
+
+{% block main %}
+
+
+<section class="about-section" id="sobre-mi">
+
+    <div class="about-container">
+
+        <!-- Encabezado de la sección -->
+        <header class="about-heading">
+            <span class="about-eyebrow">
+                <span class="about-eyebrow-line"></span>
+                CONOCE LH WEB STUDIO
+            </span>
+
+            <h2 class="titulo-sobre-mi">
+                Tecnología que convierte
+                <span>ideas en soluciones.</span>
+            </h2>
+
+            <p>
+                Desarrollo experiencias digitales que combinan
+                diseño, funcionalidad y tecnología para ayudar
+                a las ideas y los negocios a crecer.
+            </p>
+        </header>
+
+        <!-- Contenido principal -->
+        <div class="about-main">
+
+            <!-- Ilustración tecnológica -->
+            <div class="about-visual">
+
+                <div class="about-visual-glow"></div>
+
+                <div class="about-orbit about-orbit-one"></div>
+                <div class="about-orbit about-orbit-two"></div>
+
+                <!-- Panel decorativo de código -->
+                <div class="about-code-card">
+
+                    <div class="about-code-header">
+                        <div class="about-window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>app.py</span>
+                    </div>
+
+                    <div class="about-code-content">
+                        <p><span class="code-purple">class</span>
+                            <span class="code-cyan">Proyecto</span>:</p>
+
+                        <p class="code-indent">
+                            <span class="code-purple">def</span>
+                            <span class="code-yellow">crear</span>(self):
+                        </p>
+
+                        <p class="code-indent-2">
+                            <span class="code-blue">return</span>
+                            <span class="code-green">"Tu idea"</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Núcleo de la ilustración -->
+                <div class="about-tech-core">
+
+                    <div class="about-core-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <span class="about-core-title">
+                        LH WEB STUDIO
+                    </span>
+
+                    <span class="about-core-subtitle">
+                        DIGITAL DEVELOPMENT
+                    </span>
+
+                    <div class="about-core-divider"></div>
+
+                    <div class="about-core-stack">
+                        <span>UI</span>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>API</span>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>DB</span>
+                    </div>
+
+                </div>
+
+                <!-- Tarjeta frontend -->
+                <div class="about-floating-card about-card-frontend">
+
+                    <div class="about-floating-icon">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+
+                    <div>
+                        <strong>Frontend</strong>
+                        <span>Experiencia visual</span>
+                    </div>
+
+                </div>
+
+                <!-- Tarjeta backend -->
+                <div class="about-floating-card about-card-backend">
+
+                    <div class="about-floating-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+
+                    <div>
+                        <strong>Backend</strong>
+                        <span>Lógica y datos</span>
+                    </div>
+
+                </div>
+
+                <div class="about-tech-label">
+                    <span></span>
+                    DISEÑO · CÓDIGO · SOLUCIONES
+                </div>
+
+            </div>
+
+            <!-- Presentación -->
+            <div class="about-content">
+
+                <span class="about-content-label">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    SOBRE MI TRABAJO
+                </span>
+
+                <h3>
+                    Hola, soy Moi.
+                    <span>Construyamos algo increíble.</span>
+                </h3>
+
+                <p class="about-description">
+                    Me enfoco en crear sitios web modernos y
+                    aplicaciones funcionales que respondan a las
+                    necesidades reales de cada proyecto.
+                </p>
+
+                <p class="about-description">
+                    Mi enfoque combina el desarrollo de interfaces
+                    intuitivas con la lógica del backend y la gestión
+                    de datos, buscando que cada parte funcione en
+                    conjunto y ofrezca una experiencia consistente.
+                </p>
+
+                <p class="about-description">
+                    En LH Web Studio, cada proyecto es una oportunidad
+                    para convertir una idea en una solución digital
+                    útil, adaptable y pensada para sus usuarios.
+                </p>
+
+                <!-- Fortalezas -->
+                <div class="about-strengths">
+
+                    <div class="about-strength">
+                        <div class="about-strength-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div>
+                            <h4>Diseño y frontend</h4>
+                            <p>
+                                Interfaces modernas, intuitivas y
+                                adaptables a diferentes pantallas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-strength">
+                        <div class="about-strength-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div>
+                            <h4>Backend y datos</h4>
+                            <p>
+                                Funcionalidades, lógica de negocio
+                                e integración con bases de datos.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Acciones -->
+                <div class="about-actions">
+
+                    <a href="https://wa.me/584129895080" target="_blank" class="about-btn-primary">
+                        Hablemos de tu proyecto
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#proyectos" class="about-btn-secondary">
+                        Ver proyectos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Valores del servicio -->
+        <div class="about-values">
+
+            <article class="about-value">
+                <div class="about-value-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <div>
+                    <h4>Adaptabilidad</h4>
+                    <p>Diseños para móviles, tablets y ordenadores.</p>
+                </div>
+            </article>
+
+            <article class="about-value">
+                <div class="about-value-icon">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+
+                <div>
+                    <h4>Funcionalidad</h4>
+                    <p>Interfaces conectadas con la lógica de la aplicación.</p>
+                </div>
+            </article>
+
+            <article class="about-value">
+                <div class="about-value-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <div>
+                    <h4>Comunicación</h4>
+                    <p>Un proceso enfocado en las necesidades del proyecto.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROYECTOS -->
+
+<section class="projects-section" id="proyectos">
+
+    <div class="projects-container">
+
+        <!-- Encabezado -->
+        <header class="projects-heading">
+
+            <span class="projects-eyebrow">
+                <span></span>
+                MIS PROYECTOS
+                <span></span>
+            </span>
+
+            <h2 class="titulo-proyectos">
+                Ideas que se convierten
+                <span>en soluciones reales.</span>
+            </h2>
+
+            <p>
+                Cada proyecto es una oportunidad para transformar
+                una idea en una experiencia digital funcional,
+                cuidando tanto el diseño como la tecnología.
+            </p>
+
+        </header>
+
+        <!-- Filtros -->
+        <div class="projects-filters" aria-label="Filtrar proyectos">
+            </button>
+
+            <button class="project-filter"
+                    type="button"
+                    data-filter="webapp"
+                    aria-pressed="false">
+                <i class="fa-solid fa-code"></i>
+                Aplicaciones web
+            </button>
+
+            <button class="project-filter"
+                    type="button"
+                    data-filter="sitio"
+                    aria-pressed="false">
+                <i class="fa-solid fa-display"></i>
+                Sitios web
+            </button>
+
+            <button class="project-filter"
+                    type="button"
+                    data-filter="api"
+                    aria-pressed="false">
+                <i class="fa-solid fa-database"></i>
+                APIs
+            </button>
+
+        </div>
+
+        <!-- Galería -->
+        <div class="projects-grid">
+
+            <!-- PROYECTO 1 -->
+            <article class="project-card card-p" data-category="sitio">
+
+                <div class="project-image">
+                    <!-- Sustituye esta ruta por la captura real -->
+                    <img
+                        src="{{ url_for('static', filename='img/card_proyect_1.webp') }}"
+                        alt="Captura del portafolio personal"
+                        loading="lazy"
+                    >
+
+                    <span class="project-image-number">01</span>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">Sitio web</span>
+
+                    <h3>Trastus Desing</h3>
+
+                    <p>
+                        Un espacio digital para presentar servicios,
+                        proyectos y mostrar el trabajo realizado.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://trastus-design.vercel.app/"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Ver proyecto
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- PROYECTO 2 -->
+            <article class="project-card card-p" data-category="webapp">
+
+                <div class="project-image">
+                    <img
+                        src="{{ url_for('static', filename='img/card_proyect_2.webp') }}"
+                        alt="Captura de una aplicación de gestión de tareas"
+                        loading="lazy"
+                    >
+
+                    <span class="project-image-number">02</span>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">Aplicación web</span>
+
+                    <h3>Gestor de tareas</h3>
+
+                    <p>
+                        Aplicación para organizar información,
+                        administrar registros y facilitar tareas.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <a href="#"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Ver proyecto
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Llamada a la acción -->
+        <div class="projects-cta">
+
+            <div class="projects-cta-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div class="projects-cta-content">
+                <h3>¿Tienes un proyecto en mente?</h3>
+
+                <p>
+                    Hablemos de tu idea y exploremos cómo convertirla
+                    en una solución digital.
+                </p>
+            </div>
+
+            <a
+                href="https://wa.me/584129895080"
+                class="projects-cta-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Hablemos de tu proyecto
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+{% endblock %}
