@@ -1,0 +1,23 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Variables de entorno y datos sensibles
+.env
+.env.*
+
+# Excepciones para archivos de ejemplo
+!.env.example
+
+# Archivos de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
